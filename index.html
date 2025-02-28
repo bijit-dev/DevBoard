@@ -25,7 +25,7 @@
     </style>
 </head>
 
-<body class="bg-[#F4F7FF]">
+<body class="bg-[#F4F7FF] pb-8">
     <header class="py-5">
         <nav class="container py-4 px-6 bg-white mx-auto rounded-2xl flex justify-between items-center">
             <div class="logo flex items-center gap-2">
@@ -49,8 +49,9 @@
     </header>
 
     <main class="container grid grid-cols-12 mx-auto gap-6">
-        <section class="bg-white py-5 col-span-full md:col-span-9 rounded-2xl">
-            <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 border-b-2 border-dashed p-3 border-[rgba(55, 82, 253, 0.2)]">
+        <section class="bg-white py-8 px-6 col-span-full md:col-span-9 rounded-2xl">
+            <div
+                class="grid grid-cols-1 lg:grid-cols-4 gap-5 border-b-2 border-dashed p-3 border-[rgba(55, 82, 253, 0.2)]">
                 <div class="flex items-center gap-5 bg-[#F4F7FF] p-4 rounded-xl">
                     <div class="p-4 bg-white rounded-full">
                         <img class="w-7 h-7" src="./assets/checkbox.png" alt="checkbox">
@@ -76,13 +77,166 @@
                         <img class="w-7 h-7" src="./assets/calender.png" alt="calender">
                     </div>
 
-                    <div id="today" class="text-xl font-normal">Wed ,<br> <span class="font-bold">Jul 28 2025</span></div>
+                    <div id="today" class="text-xl font-normal">Wed ,<br> <span class="font-bold">Jul 28 2025</span>
+                    </div>
                 </div>
             </div>
 
-            <div>
+            <section class="py-5 px-3 grid lg:grid-cols-3 gap-9">
 
-            </div>
+                <!-- card -->
+                <div class="card bg-[#F4F7FF] card-sm shadow-sm">
+                    <div class="card-body">
+                        <div class="space-y-4">
+                            <span class="bg-white font-normal text-base text-[#00303C] py-2 px-4 rounded-lg">Shop
+                                Ease</span>
+
+                            <h2 class="card-title text-[#00303C] font-medium text-[23px]">Fix Mobile Button Issue</h2>
+                            <p class="bg-white text-black text-base font-normal opacity-50 p-4 rounded-lg">
+                                A card component has a figure, a body part, and inside body
+                                there are title and actions parts
+                            </p>
+                        </div>
+
+                        <div class="justify-between items-end card-actions">
+                            <div class="deadline">
+                                <p class="font-normal text-sm opacity-70 text-[#00303C]">Deadline</p>
+                                <p class="font-medium text-base text-[#00303C]">21 March 2025</p>
+                            </div>
+
+                            <button
+                                class="btn btn-active btn-primary font-medium text-base py-3 px-5">Completed</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-[#F4F7FF] card-sm shadow-sm">
+                    <div class="card-body">
+                        <div class="space-y-4">
+                            <span
+                                class="bg-white font-normal text-base text-[#00303C] py-2 px-4 rounded-lg">CloudSync</span>
+
+                            <h2 class="card-title text-[#00303C] font-medium text-[23px]">Add Dark Mode</h2>
+                            <p class="bg-white text-black text-base font-normal opacity-50 p-4 rounded-lg">
+                                Store the user's preference in localStorage, update CSS variables dynamically, and apply
+                                a smooth transition effect.
+                            </p>
+                        </div>
+
+                        <div class="justify-between items-end card-actions">
+                            <div class="deadline">
+                                <p class="font-normal text-sm opacity-70 text-[#00303C]">Deadline</p>
+                                <p class="font-medium text-base text-[#00303C]">21 March 2025</p>
+                            </div>
+
+                            <button
+                                class="btn btn-active btn-primary font-medium text-base py-3 px-5">Completed</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-[#F4F7FF] card-sm shadow-sm">
+                    <div class="card-body">
+                        <div class="space-y-4">
+                            <span
+                                class="bg-white font-normal text-base text-[#00303C] py-2 px-4 rounded-lg">SwiftPay</span>
+
+                            <h2 class="card-title text-[#00303C] font-medium text-[23px]">Optimize  Home page </h2>
+                            <p class="bg-white text-black text-base font-normal opacity-50 p-4 rounded-lg">
+                                Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works
+                                properly
+                                and ensure onClick works properly
+                            </p>
+                        </div>
+
+                        <div class="justify-between items-end card-actions">
+                            <div class="deadline">
+                                <p class="font-normal text-sm opacity-70 text-[#00303C]">Deadline</p>
+                                <p class="font-medium text-base text-[#00303C]">21 March 2025</p>
+                            </div>
+
+                            <button
+                                class="btn btn-active btn-primary font-medium text-base py-3 px-5">Completed</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-[#F4F7FF] card-sm shadow-sm">
+                    <div class="card-body">
+                        <div class="space-y-4">
+                            <span
+                                class="bg-white font-normal text-base text-[#00303C] py-2 px-4 rounded-lg">Meta</span>
+
+                            <h2 class="card-title text-[#00303C] font-medium text-[23px]">Add new emoji 🤲</h2>
+                            <p class="bg-white text-black text-base font-normal opacity-50 p-4 rounded-lg">
+                                Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+and ensure onClick works properly
+                            </p>
+                        </div>
+
+                        <div class="justify-between items-end card-actions">
+                            <div class="deadline">
+                                <p class="font-normal text-sm opacity-70 text-[#00303C]">Deadline</p>
+                                <p class="font-medium text-base text-[#00303C]">21 March 2025</p>
+                            </div>
+
+                            <button
+                                class="btn btn-active btn-primary font-medium text-base py-3 px-5">Completed</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-[#F4F7FF] card-sm shadow-sm">
+                    <div class="card-body">
+                        <div class="space-y-4">
+                            <span
+                                class="bg-white font-normal text-base text-[#00303C] py-2 px-4 rounded-lg">Google LLC</span>
+
+                            <h2 class="card-title text-[#00303C] font-medium text-[23px]">Integrate OpenAI API </h2>
+                            <p class="bg-white text-black text-base font-normal opacity-50 p-4 rounded-lg">
+                                Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly
+                            </p>
+                        </div>
+
+                        <div class="justify-between items-end card-actions">
+                            <div class="deadline">
+                                <p class="font-normal text-sm opacity-70 text-[#00303C]">Deadline</p>
+                                <p class="font-medium text-base text-[#00303C]">21 March 2025</p>
+                            </div>
+
+                            <button
+                                class="btn btn-active btn-primary font-medium text-base py-3 px-5">Completed</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-[#F4F7FF] card-sm shadow-sm">
+                    <div class="card-body">
+                        <div class="space-y-4">
+                            <span
+                                class="bg-white font-normal text-base text-[#00303C] py-2 px-4 rounded-lg">Glassdoar</span>
+
+                            <h2 class="card-title text-[#00303C] font-medium text-[23px]">Improve Job searching </h2>
+                            <p class="bg-white text-black text-base font-normal opacity-50 p-4 rounded-lg">
+                                Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly
+                            </p>
+                        </div>
+
+                        <div class="justify-between items-end card-actions">
+                            <div class="deadline">
+                                <p class="font-normal text-sm opacity-70 text-[#00303C]">Deadline</p>
+                                <p class="font-medium text-base text-[#00303C]">21 March 2025</p>
+                            </div>
+
+                            <button
+                                class="btn btn-active btn-primary font-medium text-base py-3 px-5">Completed</button>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
         </section>
 
         <section class="bg-white py-5 col-span-full md:col-span-3 rounded-2xl">
