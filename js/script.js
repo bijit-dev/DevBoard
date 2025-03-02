@@ -46,14 +46,6 @@ document.getElementById("blog-btn").addEventListener("click", function () {
 const completedTasks = document.getElementById('completed-tasks');
 const countTask = document.getElementById('count-task');
 
-let date = new Date();
-const time = date.toLocaleTimeString('en-US', {
-    hour: '2-digit',
-    minute: '2-digit',
-    second: '2-digit',
-    hour12: true,
-});
-
 const cards = document.querySelectorAll(".card-body")
 for (let card of cards) {
     const btn = card.querySelector(".task-btn")
@@ -74,13 +66,20 @@ for (let card of cards) {
 
         const paragraph = document.createElement("p")
         const title = card.querySelector(".card-title").innerText
-        
+        let date = new Date();
+        const time = date.toLocaleTimeString('en-US', {
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            hour12: true,
+        });
+
         paragraph.innerText = `You have Complete the task ${title} at ${time}`
 
-        paragraph.classList.add("bg-[#F4F7FF]", "p-4","m-4", "rounded-2xl");
+        paragraph.classList.add("bg-[#F4F7FF]", "p-4", "m-4", "rounded-2xl");
 
         const history = document.getElementById("history")
-        
+
         history.append(paragraph);
     })
 
@@ -90,5 +89,5 @@ for (let card of cards) {
 // clear history 
 document.getElementById("clear-btn").addEventListener("click", function () {
     const history = document.getElementById("history")
-    history.innerHTML= ""
+    history.innerHTML = ""
 })
