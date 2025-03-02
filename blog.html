@@ -48,40 +48,70 @@
                 <h1 class="font-bold text-xl pb-2 border-b border-dotted">Question-1: What are the different ways to
                     select an element in the DOM?</h1>
 
-                <p class="font-normal text-xl py-2 text-[#00303C]">Lorem</p>
+                <p class="font-normal text-xl py-2 text-[#00303C]">document.getElementById("id"); 
+                <br>
+                document.getElementsByClassName("class");
+                <br>
+                document.getElementsByTagName("tag");  
+                <br>
+                document.querySelector(".class or #id or tag"); 
+                <br>
+                document.querySelectorAll(".class or tag");  
+                <br>
+                document.getElementsByName("name");  
+                </p>
             </div>
+
             <div class="bg-white p-6 rounded-lg ">
                 <h1 class="font-bold text-xl pb-2 border-b border-dotted">Question-2: What is the difference between
                     innerHTML, innerText, and textContent ?</h1>
 
-                <p class="font-normal text-xl py-2 text-[#00303C]">Lorem</p>
+                <p class="font-normal text-xl py-2 text-[#00303C]">
+                    innerHTML -> This property sets or returns the HTML content (inner HTML) of an element.
+                    <br>
+                    innerText -> This property sets or returns the text content of the specified node, and all its descendants.
+                    <br>
+                    innerContent -> This property sets or returns the text content of the specified node, including hidden elements and all its descendants.
+                </p>
             </div>
+
             <div class="bg-white p-6 rounded-lg ">
                 <h1 class="font-bold text-xl pb-2 border-b border-dotted">Question-3: What is event delegation in the
                     DOM?</h1>
 
-                <p class="font-normal text-xl py-2 text-[#00303C]">Lorem</p>
+                <p class="font-normal text-xl py-2 text-[#00303C]">
+                    A technique where you attach a single event listener to a parent element, allowing it to handle events triggered on its child elements, instead of adding separate listeners to each child elemen.
+                </p>
             </div>
+
             <div class="bg-white p-6 rounded-lg ">
                 <h1 class="font-bold text-xl pb-2 border-b border-dotted">Question-4: What is event bubbling in the DOM?
                 </h1>
 
-                <p class="font-normal text-xl py-2 text-[#00303C]">Lorem</p>
+                <p class="font-normal text-xl py-2 text-[#00303C]">
+                    Event Bubbling is a process where an event first occurs on the target element and then bubbles up to its parent elements, all the way to the root element. In other words, when an event happens on an element, it propagates upward through its parent elements until it reaches the root of the DOM tree.
+                </p>
             </div>
             <div class="bg-white p-6 rounded-lg ">
                 <h1 class="font-bold text-xl pb-2 border-b border-dotted">Question-5: How do you create, add, and remove
                     elements using JavaScript?</h1>
 
-                <p class="font-normal text-xl py-2 text-[#00303C]">Lorem</p>
+                <p class="font-normal text-xl py-2 text-[#00303C]">
+                    To create an element, you can use the document.createElement() method.
+                    <br>
+                    To add an element, you can use the appendChild() method or the insertBefore() method. 
+                    <br>
+                    To remove an element, you can use the removeChild() method.
+                </p>
             </div>
         </div>
     </main>
-    
+
     <!-- back btn add -->
     <script>
         document.getElementById("back-btn").addEventListener("click", function () {
             window.location.href = "index.html"
-            
+
         })
     </script>
 </body>
