@@ -38,7 +38,7 @@ cureentDate()
 
 // blog page btn 
 document.getElementById("blog-btn").addEventListener("click", function () {
-    window.location.href = "../devboard/blog.html"
+    window.location.href = "../DevBoard/blog.html"
 })
 
 
